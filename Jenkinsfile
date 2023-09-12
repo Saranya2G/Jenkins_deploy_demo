@@ -28,5 +28,13 @@ pipeline{
                    }
                }
            }
+            stage("Run Docker Image"){
+               steps{
+                   script{
+                       bat "docker run -d -p 7070:7070 saran0809/sample-devops"
+                   }
+               }
+           }
+           
        }
 }
