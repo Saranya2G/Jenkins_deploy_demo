@@ -31,7 +31,7 @@ pipeline{
             stage("Run Docker Image"){
                steps{
                    script{
-                       bat "docker run -d -p 9000:9000 saran0809/sample-devops"
+                       bat "docker run -d -p 8081:8081 saran0809/sample-devops"
                    }
                }
            }
