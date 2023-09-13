@@ -3,5 +3,5 @@ services:
   backend-java:
     image: 'docker.io/saran0809/sample-devops:latest'
     container_name: sample-devops
-ports:
-    - '8081:8081'
+  expose:
+    - '8081'
