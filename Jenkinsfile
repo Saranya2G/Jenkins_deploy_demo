@@ -31,7 +31,8 @@ pipeline{
             stage("Run Docker Image"){
                steps{
                    script{
-                       bat "docker run -p 8081:8081 -d --name devops saran0809/sample-devops"
+                       bat "docker compose -up -d"
+                       bat "docker compose ps"
                    }
                }
            }
