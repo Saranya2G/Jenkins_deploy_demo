@@ -31,7 +31,7 @@ pipeline{
             stage("Run Docker Image"){
                steps{
                    script{
-                       bat "docker compose -up -d"
+                       bat "docker compose up -d"
                        bat "docker compose ps"
                    }
                }
